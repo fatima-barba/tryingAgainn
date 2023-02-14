@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_favColorQues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Favorite color?"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_favColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="pulrple" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_dayQues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Are you happy?" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rb_happyYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="yes" />
+
+        <RadioButton
+            android:id="@+id/rb_happyNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="no" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_watchedMovieQues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="What movies have you watched?" />
+
+    <CheckBox
+        android:id="@+id/cb_beatyAndBeast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Beauty and the Beast" />
+
+    <CheckBox
+        android:id="@+id/cb_bambi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bambi" />
+
+    <CheckBox
+        android:id="@+id/cb_chickenLil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chicken Little" />
+
+    <CheckBox
+        android:id="@+id/cb_tangled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tangled" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_fini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="finish" />
+
+</LinearLayout>
